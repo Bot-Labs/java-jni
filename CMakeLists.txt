@@ -8,4 +8,6 @@ include_directories(
         /usr/lib/jvm/java-11-openjdk-amd64/include
         /usr/lib/jvm/java-11-openjdk-amd64/include/linux)
 
-add_library(jnilib SHARED library.cpp library.h)
+set(SOURCE library.cpp library.h )
+
+add_library(jnilib SHARED ${SOURCE} )
